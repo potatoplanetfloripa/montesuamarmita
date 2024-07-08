@@ -112,7 +112,7 @@ body {
     border-radius: 15px;
 }
 label, p {
-    font-size: 1.0em;
+    font-size: 1.5em;
     margin: 10px 10px;
     font-weight: 900;
 }
@@ -126,7 +126,7 @@ label, p {
     border-radius: 15px;
 }
 input {
-    font-size: 1.0em;
+    font-size: 1.5em;
     margin-right: 8px;
     padding: 5px;
     width: 80px;
@@ -135,9 +135,9 @@ input {
     border-radius: 5px;
 }
 select {
-    font-size: 0.8em;
+    font-size: 0.9em;
     padding: 5px;
-    width: 130px;
+    width: 110px;
     background-color: var(--input-color);
     border: 1px solid var(--border-color);
     border-radius: 5px;
@@ -162,7 +162,7 @@ select {
     margin-top: 20px;
 }
 .descontoInf p {
-    font-size: 1.0em;
+    font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 5px;
 }

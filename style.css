@@ -43,8 +43,8 @@
 }
 
 #switch button {
-    width: 0px;
-    height: 39px;
+    width: 35px;
+    height: 35px;
     background: #e4e2e2 var(--switch-bg-url) no-repeat center;
     border: 1px solid black;
     border-radius: 50%;
@@ -61,7 +61,7 @@
 }
 
 #switch span {
-    display: block;
+    display: flex;
     width: 64px;
     height: 20px;
     background-color: #e4e2e2;
@@ -126,7 +126,7 @@ label, p {
     border-radius: 15px;
 }
 input {
-    font-size: 0.9em;
+    font-size: 1.3em;
     margin-right: 8px;
     padding: 5px;
     width: 80px;
@@ -135,7 +135,7 @@ input {
     border-radius: 5px;
 }
 select {
-    font-size: 0.9em;
+    font-size: 1.3em;
     padding: 5px;
     width: 160px;
     background-color: var(--input-color);

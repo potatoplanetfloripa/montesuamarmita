@@ -135,7 +135,7 @@ input {
     border-radius: 5px;
 }
 select {
-    font-size: 1.3em;
+    font-size: 1.0em;
     padding: 5px;
     width: 160px;
     background-color: var(--input-color);

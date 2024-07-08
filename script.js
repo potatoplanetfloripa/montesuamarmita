@@ -13,7 +13,6 @@ function calculateTotal() {
         document.getElementById('quantity10').value,
         document.getElementById('quantity11').value
     ];
-
     const specialDishChecked = document.getElementById('specialDish').checked;
     const marmitaQuantity = specialDishChecked ? 7 : document.getElementById('marmitaQuantity').value;
     let totalGrams = 0;

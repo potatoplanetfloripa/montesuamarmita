@@ -31,7 +31,7 @@
     --button-color: #6B7D5C;
     --surface-color: rgba(0, 0, 0, 0.08);
     --surface-color-hover: rgba(0, 0, 0, 0.05);
-    --switch-bg-url: url(./assets/son.svg);
+    --switch-bg-url: url(./assets/Son.svg);
     --bg-hover-button: #aeca96;
     --background-color2: rgba(221, 221, 221, 0.774);
 }
@@ -112,7 +112,7 @@ body {
     border-radius: 15px;
 }
 label, p {
-    font-size: 1.2em;
+    font-size: 1.0em;
     margin: 10px 10px;
     font-weight: 900;
 }
@@ -126,7 +126,7 @@ label, p {
     border-radius: 15px;
 }
 input {
-    font-size: 1.3em;
+    font-size: 1.0em;
     margin-right: 8px;
     padding: 5px;
     width: 80px;
@@ -162,7 +162,7 @@ select {
     margin-top: 20px;
 }
 .descontoInf p {
-    font-size: 1.5em;
+    font-size: 1.0em;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -171,11 +171,11 @@ select {
     padding: 0;
 }
 .descontoInf ul li {
-    font-size: 1.3em;
+    font-size: 1.0em;
     margin: 5px 0;
 }
 #finalCost {
-    font-size: 1.5em;
+    font-size: 1.0em;
 }
 button {
     padding: 10px 20px;
@@ -204,7 +204,7 @@ button:disabled {
     margin-top: 20px;
 }
 .order-summary h2 {
-    font-size: 1.2em;
+    font-size: 1.0em;
     margin-bottom: 10px;
 }
 #summaryItems {

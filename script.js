@@ -112,19 +112,27 @@ function togglePureOption() {
     const pureOptionSelect = document.getElementById('pureOption');
     const allInputs = document.querySelectorAll(`.calc[data-group="2"] input:not(#quantity10)`);
     const allLabels = document.querySelectorAll(`.calc[data-group="2"] label:not([for="quantity10"]), label[for="pureOption"]`);
-    
+
     if (pureQuantity) {
         pureOptionSelect.disabled = false;
+        allLabels.forEach(label => {
+            if (label.htmlFor === 'pureOption') {
+                label.classList.remove('strikethrough');
+            }
+        });
         allInputs.forEach(i => {
             i.disabled = true;
             i.previousElementSibling.classList.add('strikethrough');
         });
         allLabels.forEach(label => {
-            label.classList.add('strikethrough');
+            if (label.htmlFor !== 'pureOption') {
+                label.classList.add('strikethrough');
+            }
         });
     } else {
         pureOptionSelect.value = '';
         pureOptionSelect.disabled = true;
+        pureOptionSelect.previousElementSibling.classList.add('strikethrough');
         allInputs.forEach(i => {
             i.disabled = false;
             i.previousElementSibling.classList.remove('strikethrough');
@@ -133,8 +141,8 @@ function togglePureOption() {
             label.classList.remove('strikethrough');
         });
     }
-    
 }
+
 function toggleSpecialDish(checkbox) {
     const allInputs = document.querySelectorAll('.calc input:not(#specialDish), .calc select');
     const quantityInput = document.getElementById('marmitaQuantity');
@@ -341,46 +349,13 @@ function sendOrder() {
     window.open(whatsappLink, '_blank');
 }
 
-function togglePureOption() {
-    const pureQuantity = document.getElementById('quantity10').value;
-    const pureOptionSelect = document.getElementById('pureOption');
-    const allInputs = document.querySelectorAll(`.calc[data-group="2"] input:not(#quantity10)`);
-    const allLabels = document.querySelectorAll(`.calc[data-group="2"] label:not([for="quantity10"]), label[for="pureOption"]`);
-
-    if (pureQuantity) {
-        pureOptionSelect.disabled = false;
-        allInputs.forEach(i => {
-            i.disabled = true;
-            i.previousElementSibling.classList.add('strikethrough');
-        });
-        allLabels.forEach(label => {
-            label.classList.add('strikethrough');
-        });
-    } else {
-        pureOptionSelect.value = '';
-        pureOptionSelect.disabled = true;
-        allInputs.forEach(i => {
-            i.disabled = false;
-            i.previousElementSibling.classList.remove('strikethrough');
-        });
-        allLabels.forEach(label => {
-            label.classList.remove('strikethrough');
-        });
-    }
-}
 function Togglemode () {
     const html = document.documentElement
-    
-    //if (html.classList.contains('light')){
-    //     html.classList.remove('light')
-    // } else {
-    //    html.classList.add('light')
-    //}
     html.classList.toggle('light')
     const img = document.querySelector('.logo img')
 
     if(html.classList.contains('light')){
-    img.setAttribute("src","./assets/amor.png")    
+        img.setAttribute("src","./assets/amor.png")    
     } else {
         img.setAttribute("src","./assets/amor (1).png")    
     }

@@ -50,7 +50,7 @@
     border-radius: 50%;
     position: absolute;
     top: 50%;
-    left: -12px;
+    left: -18px;
     z-index: 1;
     transform: translateY(-80%);
     transition: all 0.2s;

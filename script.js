@@ -1,5 +1,5 @@
 function calculateTotal() {
-    const pricePerKg = [28.35, 52.86, 31, 10, 10, 2.6, 2.6, 4, 6.87, 5.67, 14.95]; // Preços por kg dos produtos
+    const pricePerKg = [28.35, 20.86, 31, 10, 10, 2.6, 2.6, 4, 6.87, 5.67, 14.95]; // Preços por kg dos produtos
     const quantities = [
         document.getElementById('quantity1').value,
         document.getElementById('quantity2').value,
